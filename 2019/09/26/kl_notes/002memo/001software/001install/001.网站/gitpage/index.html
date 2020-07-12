@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/hexo-next-muse/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hexo-next-muse/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hexo-next-muse/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/hexo-next-muse/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="alternate" href="/hexo-next-muse/atom.xml" title="⍟曾经走过👣" type="application/atom+xml">
+
+<link rel="stylesheet" href="/hexo-next-muse/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/hexo-next-muse/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/hexo-next-muse/',
+    scheme: 'Muse',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"right","width":null,"display":"hide","offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":false,"async":false,"transition":{"post_block":null,"post_header":null,"post_body":null,"coll_header":null,"sidebar":null}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="gitpages contents   Travis Ci-kevinluologtravis ci repo 关系">
+<meta name="keywords" content="自动生成,001.网站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitpage">
+<meta property="og:url" content="http://yoursite.com/2019/09/26/kl_notes/002memo/001software/001install/001.网站/gitpage/index.html">
+<meta property="og:site_name" content="⍟曾经走过👣">
+<meta property="og:description" content="gitpages contents   Travis Ci-kevinluologtravis ci repo 关系">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-26T02:15:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gitpage">
+<meta name="twitter:description" content="gitpages contents   Travis Ci-kevinluologtravis ci repo 关系">
+  <link rel="canonical" href="http://yoursite.com/2019/09/26/kl_notes/002memo/001software/001install/001.网站/gitpage/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>gitpage | ⍟曾经走过👣</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/hexo-next-muse/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">⍟曾经走过👣</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">kevinluo</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/hexo-next-muse/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/hexo-next-muse/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/hexo-next-muse/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/hexo-next-muse/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+    
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/kevinluolog" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexo-next-muse/2019/09/26/kl_notes/002memo/001software/001install/001.网站/gitpage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kevinluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/hexo-next-muse/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="⍟曾经走过👣">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">gitpage
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表</span>
+
+              
+                
+              
+
+              <time title="创建：2019-09-26 02:15:02" itemprop="dateCreated datePublished" datetime="2019-09-26T02:15:02+00:00">2019-09-26</time>
+            </span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo-next-muse/categories/001-网站/" itemprop="url" rel="index"><span itemprop="name">001.网站</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+          <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">字数：</span>
+              
+              <span>6.6k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>6 分</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="gitpages">gitpages</h1><div class="contents">
+<p>contents</p>
+</div><div class="section-numbering">
+
+</div><h2 id="travis-ci-kevinluolog">Travis Ci-kevinluolog</h2><h3 id="travis-ci-repo-关系">travis ci repo 关系</h3><a id="more"></a>
+
+
+
+
+<p>序号 <a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a> <a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a> <a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a></p>
+<h4 id="kevinluologkdoc.git-push触发">kevinluolog/kdoc.git push触发</h4>
+<h5 id="触发仓输出仓关系">触发仓/输出仓关系</h5>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 29%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a></th>
+<th><a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a></th>
+<th><a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:travisci_out_kdoc@output" target="_blank" rel="noopener">travisci_out_kdoc@output</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:hexo-klblog-src@x5个分支" target="_blank" rel="noopener">hexo-klblog-src@x5个分支</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran002memo@master" target="_blank" rel="noopener">tran002memo@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran002memo" target="_blank" rel="noopener">travisci_out_kdoc@tran002memo</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran003post@master" target="_blank" rel="noopener">tran003post@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran003post" target="_blank" rel="noopener">travisci_out_kdoc@tran003post</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran004book@master" target="_blank" rel="noopener">tran004book@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran004book" target="_blank" rel="noopener">travisci_out_kdoc@tran004book</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:tran005work@xxx" target="_blank" rel="noopener">tran005work@xxx</a></td>
+<td>~</td>
+<td><a href="mailto:travisci_out_005work@xxx" target="_blank" rel="noopener">travisci_out_005work@xxx</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:tran006tmp@xxx" target="_blank" rel="noopener">tran006tmp@xxx</a></td>
+<td>~ pdf html slide</td>
+<td><a href="mailto:travisci_out_006tmp@xxx" target="_blank" rel="noopener">travisci_out_006tmp@xxx</a></td>
+</tr>
+</tbody>
+</table>
+<p>xxx表示：dev=all pdf=pdf html=html slide=slide</p>
+<h5 id="完成功能">完成功能：</h5>
+<p>代码参考 根目录travis.yml</p>
+<h6 id="rst-转成-.html">.rst 转成 .html;</h6>
+<ul>
+<li><p>用sphinx生成：</p>
+<pre><code>sphinx-build -b html $TRAVIS_BUILD_DIR/003work/006tmp $TRAVIS_BUILD_DIR/output/sphinx/build-post</code></pre>
+<pre><code>.html输出到本地output目录： `/output/sphinx/build-memo/*` 
+.html输出到本地output目录： `/output/sphinx/build-post/*` </code></pre></li>
+<li><p>用git deploy：</p>
+<pre><code>git add -A; 
+git commit --allow-empty -m &quot;&quot;
+git push</code></pre>
+<pre><code>输出到=&gt;repo0: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到WWWrepo3: `github.com/kevinluolog/gp-memo@gh-pages`
+006tmp=&gt;deploy到WWWrepo4: `github.com/kevinluolog/gp-post@gh-pages`</code></pre></li>
+</ul>
+<p class="heading" id="kdoc发布-网站地址">kdoc发布 网站地址：</p>
+<ol type="1">
+<li><a href="http://kevinluolog.github.io/gp-memo" target="_blank" rel="noopener">kevinluolog.github.io gp-memo 002memo</a></li>
+<li><a href="http://kevinluolog.github.io/gp-memo" target="_blank" rel="noopener">kevinluolog.github.io gp-post 002post</a></li>
+</ol>
+<h6 id="rst-转成-hexo输入的-.md添加frontmatter信息如tagcategory">.rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</h6>
+<ul>
+<li><p>用makefile + pandoc生成：</p>
+<p>详细参考 <span class="title-ref">kdoc/003work/000tools/002makefiles/001pandoc/linux/Makefile</span></p>
+<pre><code>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/006tmp DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/hexomd/006tmp DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.md DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=post+ CTL_TOC=TRUE
+
+<p>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/006tmp DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/html/006tmp DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.html DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=</p></code></pre><p></p>
+<pre><code>.md输出到本地output目录： `/output/pandoc/hexomd/002memo/*` 
+.md输出到本地output目录： `/output/pandoc/hexomd/006tmp/*` </code></pre></li>
+<li><p>用git deploy：</p>
+<pre><code>git add -A; 
+git commit --allow-empty -m &quot;&quot;
+git push</code></pre>
+<pre><code>输出到=&gt;repo1: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到repo2-(@b1:b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+006tmp=&gt;deploy到repo2-(@b1-b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+xxx:分支 = 
+     master
+     hexo-next-Gemini :注意大写，linux下大小写敏感
+     hexo-next-muse
+     hexo-next-Pisces :注意大写，linux下大小写敏感
+     hexo-maup</code></pre>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。 详细参考 <a href="#kevinluologhexo-klblog-src.git-push触发">kevinluolog/hexo-klblog-src.git push触发</a></p></li>
+</ul>
+<h5 id="输出output目录结构">输出output目录结构</h5>
+<pre><code>.html：由sphinx产生
+/output/sphinx/build-memo/*
+/output/sphinx/build-post/*
+
+<p>.md hexo：由Makefile 产生, pandoc.exe<br>makefile位于/kdoc/003work/000tools/002makefiles/001pandoc/linux/<br>/output/pandoc/hexomd/002memo<br>/output/pandoc/hexomd/006tmp</p></code></pre><p></p>
+<p>hexo源码仓库中的_posts来源，是上面output目录中的pandoc/hexomd目录中的002memo和006tmp. 先clone下来，用rm删除002meo和006tmp,再用cp从hexomd中copy过来。</p>
+<h4 id="kevinluologhexo-klblog-src.git-push触发">kevinluolog/hexo-klblog-src.git push触发</h4>
+<p>代码参考 根目录travis.yml</p>
+<h5 id="触发仓输出仓关系-1">触发仓/输出仓关系</h5>
+<p>~：表示和前面的 <a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a> 一样</p>
+<div class="line-block">master<br>
+hexo-next-Gemini :注意大写，linux下大小写敏感<br>
+hexo-next-muse<br>
+hexo-next-Pisces :注意大写，linux下大小写敏感<br>
+hexo-maup</div>
+<table>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 41%">
+<col style="width: 14%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>序号</th>
+<th><a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a></th>
+<th><a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a></th>
+<th><a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a> gitpage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01</td>
+<td><a href="mailto:hexo-klblog-src@master" target="_blank" rel="noopener">hexo-klblog-src@master</a></td>
+<td>~</td>
+<td><a href="mailto:kevinluolog.github.io@master" target="_blank" rel="noopener">kevinluolog.github.io@master</a></td>
+</tr>
+<tr class="even">
+<td>02</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-Gemini" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-Gemini</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-gemini@gh-pages" target="_blank" rel="noopener">hexo-next-gemini@gh-pages</a></td>
+</tr>
+<tr class="odd">
+<td>03</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-muse" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-muse</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-muse@gh-pages" target="_blank" rel="noopener">hexo-next-muse@gh-pages</a></td>
+</tr>
+<tr class="even">
+<td>04</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-Pisces" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-Pisces</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-Pisces@gh-pages" target="_blank" rel="noopener">hexo-next-Pisces@gh-pages</a></td>
+</tr>
+<tr class="odd">
+<td>05</td>
+<td><a href="mailto:hexo-klblog-src@hexo-maup" target="_blank" rel="noopener">hexo-klblog-src@hexo-maup</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-maup@gh-pages" target="_blank" rel="noopener">hexo-maup@gh-pages</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="完成功能-1">完成功能：</h5>
+<p>代码参考 根目录travis.yml</p>
+<h6 id="错误时间.md-转成-正确时间.md">错误时间.md 转成 正确时间.md</h6>
+<p>详细代码参见 <span class="title-ref">/MakefileLinuxkblog.mk /travis.yml</span></p>
+<p>影响网站文章时间排序。最终实现正确排序，同时还需要hexo的渲染前的hook配合,把date时间，改成文件的修改时间。</p>
+<p>时间传递路径为， 渲染用的文件创建日期post.date &lt;3= post.updated &lt;2= 文件的mtime &lt;1= 文件的首次commit时间。</p>
+<p>第&lt;1=次转换 详细代码参见 <span class="title-ref">/MakefileLinuxkblog.mk /travis.yml</span> 利用 <span class="title-ref">git log --date=iso --format="%ad" -- ""</span> 获取历史commit时间数据, <span class="title-ref">tail -1</span> 获取首次commit时间， <span class="title-ref">touch -c -data "" -m</span> 设置mtime</p>
+<p>第&lt;2=次转换 hexo编译渲染时自己读取文件时间产生，尚不知在什么module里做的。</p>
+<p>第&lt;3=次转换 详细代码参见 <span class="title-ref">/klBlog/themes/next/scripts/filters/kl-touch-file-time.js</span> 利用 hexo钩子before_post_render 替换。</p>
+<ul>
+<li><p>用makefile + shell脚本 + git命令生成：</p>
+<p>详细代码参考 <span class="title-ref">/MakefileLinuxkblog.mk</span></p>
+<p>makefile</p>
+<pre><code>make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts</code></pre>
+<p>或纯脚本,单行即可。</p>
+<pre><code>git ls-files -z --eol | sed -e &quot;s/i\\/lf[ \\t]*w\\/lf[ \\t]*attr\\/[ \\t]*/\\n/g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; -- &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1 | xargs -I{} touch -c $filename --date=&quot;{}&quot; -m; done</code></pre></li>
+</ul>
+<h6 id="正确时间.md-转成-网站.html">正确时间.md 转成 网站.html;</h6>
+<p>详细代码参考 <span class="title-ref">/travis.yml /_config.yml</span></p>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。</p>
+<ul>
+<li><p>用hexo g 生成</p>
+<p>自动把 <span class="title-ref">/hexo/klBlog/source/_posts</span> 目录中的 .md 生成hexo静态网页</p>
+<pre><code>hexo clean
+hexo generate</code></pre></li>
+<li><p>用hexo deploy <a href="mailto:发布到repo@gh-pages" target="_blank" rel="noopener">发布到repo@gh-pages</a>。</p>
+<pre><code>sed -i &quot;s/gh_token/${GH_TOKEN}/g&quot; ./_config.yml
+hexo deploy</code></pre></li>
+</ul>
+<p class="heading" id="hexo-klblog-src发布-网站地址">hexo-klblog-src发布 网站地址：</p>
+<ol type="1">
+<li><a href="http://kevinluolog.github.io" target="_blank" rel="noopener">kevinluolog.github.io master</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-gemini" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-gemini</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-muse" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-muse</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-Pisces" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-Pisces</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-maup" target="_blank" rel="noopener">kevinluolog.github.io hexo-maup</a></li>
+</ol>
+<h4 id="网站生成工作步骤">网站生成工作步骤:</h4>
+<h5 id="目标写好即完成">目标：写好即完成</h5>
+<p>目标是只要用sublime写好.rst文档，提交就可以直接在浏览器上看到写的东西了。即只要做完step1后,step 2,step3会自动完成，然后稍等即可以step4.</p>
+<div class="line-block">step 1: 写文档 .rst<br>
+step 2: .rst 2 .md(with hexo frontmatter)<br>
+step 3: hexo编译成静态html,并发布到托管服务器<br>
+stop 4: 用浏览器浏览网站</div>
+<h5 id="数据流路径windown本地">数据流路径(windown本地):</h5>
+<ol type="1">
+<li><p>.rst 2 .md(with hexo frontmatter) (手动make)</p>
+<p>目标：</p>
+<pre><code>H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\002memo
+H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\006tmp
+=&gt;
+H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\source\\_posts\\kl_notes
+H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\source\\_posts\\kl_post</code></pre>
+<p>command:</p>
+<pre><code>H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\000tools\\002makefiles\\001pandoc\\rst2md_hexo_copy2.bat
+
+<p>DIR_BASE_SRC=H:\tmp_H\001.work\002git\kdoc\003work\002memo ^<br>DIR_BASE_OBJ=H:\tmp_H\001.work\004.env\01prjsp\04make\01rst2md\tmp2 ^<br>DIR_BASE_COPYTO=H:\tmp_H\001.work\004.env\01prjsp\04make\01rst2md\copy2 ^</p>
+<p>此.bat用了一个临时目录，用时需要手工从copy2目录拷贝到kl_note目录。当然可以把.bat中的，obj目录直接转为kl_notes目录，就可以直接一步修改。注意把copyto目录置空。</p></code></pre></li><p></p>
+<li><p>提交 hexo编译并发布 （tracis CI 自动 ）</p>
+<pre><code>tortioseGit: H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\
+提交到 repo: hexo-klblog-src@master
+触发travis CI 自动 hexo编译成静态html =&gt; kevinluolog.github.io@master</code></pre></li>
+</ol>
+<h5 id="数据流路径travis-全自动">数据流路径(travis 全自动):</h5>
+<ol type="1">
+<li><p>写文档。</p>
+<p>【在clone下来的kdoc@dev子目录中(003work/002memo/* 003work/006tmp/*)】</p></li>
+<li><p>提交推送。</p>
+<p>【git add . ; git commit -m "" ; git push】</p></li>
+<li><p><a href="mailto:触发kdoc@dev/travis.yml工作" target="_blank" rel="noopener">触发kdoc@dev/travis.yml工作</a>，编译/002memo /006tmp/*文档内容。</p>
+<p>详细参考 <a href="#kevinluologkdoc.git-push触发">kevinluolog/kdoc.git push触发</a></p></li>
+<li><p><a href="mailto:触发hexo-klblog-src.git@xxx/travis.yml工作" target="_blank" rel="noopener">触发hexo-klblog-src.git@xxx/travis.yml工作</a>，编译/source/_posts/文档内容。</p>
+<p>详细参考 <a href>kkevinluolog/hexo-klblog-src.git push触发</a></p></li>
+<li><p>浏览发布网站地址 sphinx和hexo</p>
+<p>参考 <a href="#kdoc发布-网站地址">kdoc发布 网站地址：</a> sphinx</p>
+<p>参考 <a href="#hexo-klblog-src发布-网站地址">hexo-klblog-src发布 网站地址：</a> hexo</p></li>
+<li><p>生成输出 repo地址</p>
+<p><a href="https://github.com/travisci_out_kdoc/" target="_blank" rel="noopener">kdoc的output输出仓库网址 travisci_out_kdoc</a></p></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/hexo-next-muse/tags/自动生成/" rel="tag"><i class="fa fa-tag"></i> 自动生成</a>
+            
+              <a href="/hexo-next-muse/tags/001-网站/" rel="tag"><i class="fa fa-tag"></i> 001.网站</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/hexo-next-muse/2019/09/26/kl_notes/002memo/004.study/001.编程/001.make/makefile/" rel="next" title="makefile">
+                  <i class="fa fa-chevron-left"></i> makefile
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/hexo-next-muse/2019/09/26/kl_notes/002memo/001software/001install/001.网站/网站资源站点/" rel="prev" title="网站资源站点">
+                  网站资源站点 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#gitpages"><span class="nav-number">1.</span> <span class="nav-text">gitpages</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#travis-ci-kevinluolog"><span class="nav-number">1.1.</span> <span class="nav-text">Travis Ci-kevinluolog</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#travis-ci-repo-关系"><span class="nav-number">1.1.1.</span> <span class="nav-text">travis ci repo 关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#kevinluologkdoc.git-push触发"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">kevinluolog/kdoc.git push触发</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#触发仓输出仓关系"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">触发仓/输出仓关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#完成功能"><span class="nav-number">1.1.1.1.2.</span> <span class="nav-text">完成功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#rst-转成-.html"><span class="nav-number">1.1.1.1.2.1.</span> <span class="nav-text">.rst 转成 .html;</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#rst-转成-hexo输入的-.md添加frontmatter信息如tagcategory"><span class="nav-number">1.1.1.1.2.2.</span> <span class="nav-text">.rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#输出output目录结构"><span class="nav-number">1.1.1.1.3.</span> <span class="nav-text">输出output目录结构</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#kevinluologhexo-klblog-src.git-push触发"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">kevinluolog/hexo-klblog-src.git push触发</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#触发仓输出仓关系-1"><span class="nav-number">1.1.1.2.1.</span> <span class="nav-text">触发仓/输出仓关系</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#完成功能-1"><span class="nav-number">1.1.1.2.2.</span> <span class="nav-text">完成功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#错误时间.md-转成-正确时间.md"><span class="nav-number">1.1.1.2.2.1.</span> <span class="nav-text">错误时间.md 转成 正确时间.md</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#正确时间.md-转成-网站.html"><span class="nav-number">1.1.1.2.2.2.</span> <span class="nav-text">正确时间.md 转成 网站.html;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#网站生成工作步骤"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">网站生成工作步骤:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#目标写好即完成"><span class="nav-number">1.1.1.3.1.</span> <span class="nav-text">目标：写好即完成</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#数据流路径windown本地"><span class="nav-number">1.1.1.3.2.</span> <span class="nav-text">数据流路径(windown本地):</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#数据流路径travis-全自动"><span class="nav-number">1.1.1.3.3.</span> <span class="nav-text">数据流路径(travis 全自动):</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">kevinluo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/hexo-next-muse/archives/">
+        
+          <span class="site-state-item-count">211</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/hexo-next-muse/categories/">
+          
+        
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/hexo-next-muse/tags/">
+          
+        
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/hexo-next-muse/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kevinluo</span>
+</div>
+
+          
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      </span>
+    
+  
+    
+      <span class="post-meta-divider">|</span>
+    
+
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      </span>
+    
+
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/hexo-next-muse/lib/anime.min.js?v=3.1.0"></script>
+<script src="/hexo-next-muse/js/utils.js?v=7.4.0"></script>
+<script src="/hexo-next-muse/js/schemes/muse.js?v=7.4.0"></script>
+<script src="/hexo-next-muse/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/hexo-next-muse/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+

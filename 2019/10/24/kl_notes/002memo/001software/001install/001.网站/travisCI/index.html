@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/hexo-next-muse/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hexo-next-muse/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hexo-next-muse/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/hexo-next-muse/images/logo.svg?v=7.4.0" color="#222">
+  <link rel="alternate" href="/hexo-next-muse/atom.xml" title="⍟曾经走过👣" type="application/atom+xml">
+
+<link rel="stylesheet" href="/hexo-next-muse/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/hexo-next-muse/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/hexo-next-muse/',
+    scheme: 'Muse',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"right","width":null,"display":"hide","offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":false,"async":false,"transition":{"post_block":null,"post_header":null,"post_body":null,"coll_header":null,"sidebar":null}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="travis CI contents   installtravis website教程链接持续集成服务TravisCI教程-阮一峰">
+<meta name="keywords" content="自动生成,001.网站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="travisCI">
+<meta property="og:url" content="http://yoursite.com/2019/10/24/kl_notes/002memo/001software/001install/001.网站/travisCI/index.html">
+<meta property="og:site_name" content="⍟曾经走过👣">
+<meta property="og:description" content="travis CI contents   installtravis website教程链接持续集成服务TravisCI教程-阮一峰">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-24T07:54:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="travisCI">
+<meta name="twitter:description" content="travis CI contents   installtravis website教程链接持续集成服务TravisCI教程-阮一峰">
+  <link rel="canonical" href="http://yoursite.com/2019/10/24/kl_notes/002memo/001software/001install/001.网站/travisCI/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>travisCI | ⍟曾经走过👣</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/hexo-next-muse/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">⍟曾经走过👣</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">kevinluo</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/hexo-next-muse/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/hexo-next-muse/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/hexo-next-muse/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/hexo-next-muse/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+    
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/kevinluolog" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexo-next-muse/2019/10/24/kl_notes/002memo/001software/001install/001.网站/travisCI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kevinluo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/hexo-next-muse/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="⍟曾经走过👣">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">travisCI
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表</span>
+
+              
+                
+              
+
+              <time title="创建：2019-10-24 07:54:33" itemprop="dateCreated datePublished" datetime="2019-10-24T07:54:33+00:00">2019-10-24</time>
+            </span>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/hexo-next-muse/categories/001-网站/" itemprop="url" rel="index"><span itemprop="name">001.网站</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+          <br>
+            <span class="post-meta-item" title="字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">字数：</span>
+              
+              <span>4.5k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>4 分</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="travis-ci">travis CI</h1><div class="contents">
+<p>contents</p>
+</div><div class="section-numbering">
+
+</div><h2 id="install">install</h2><p><a href="https://travis-ci.com" target="_blank" rel="noopener">travis website</a></p><h3 id="教程链接">教程链接</h3><p><a href="http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html" target="_blank" rel="noopener">持续集成服务TravisCI教程-阮一峰</a></p><a id="more"></a>
+
+
+
+
+
+
+<p><a href="https://oncletom.io/2016/travis-ssh-deploy/" target="_blank" rel="noopener">SSH deploys with Travis CI-frenchman</a></p>
+<p><a href="https://docs.travis-ci.com/user/deployment/pages/" target="_blank" rel="noopener">spec for deploy of github pages</a></p>
+<p><a href="https://www.jianshu.com/p/8308b8f08de9" target="_blank" rel="noopener">Travis Ci的最接地气的中文使用教程</a></p>
+<p><a href></a></p>
+<p><a href></a></p>
+<h2 id="案例">案例</h2>
+<h3 id="gcc-c">gcc c</h3>
+<p>同时我们需要在仓库中编写一份名为.travis.yml的配置文件，来指定我们的项目需要进行怎样的操作。</p>
+<pre><code>sudo: required
+language: c
+complier: gcc
+before_script: sudo apt-get install libev-dev
+script: make
+notifications:
+  email:
+    recipients:
+      - xxx@gmail.com
+    on_success: change
+    on_failure: always</code></pre>
+<p>可以看到这里指定了需要的sudo权限，编程语言，编译器，script即执行的操作，before_script则安装了项目依赖的libev-dev包，通知的方式email，并且指定了邮件地址。</p>
+<h3 id="official-deploy-spec">official deploy spec</h3>
+<p>For a minimal configuration, add the following to your .travis.yml:</p>
+<pre><code>deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository,    as a secure variable
+  keep_history: true
+  on:
+    branch: master</code></pre>
+<p>Make sure you have skip_cleanup set to true, otherwise Travis CI will delete all the files created during the build, which will probably delete what you are trying to upload.</p>
+<p>Further configuration #</p>
+<p>local_dir: Directory to push to GitHub Pages, defaults to current directory. Can be specified as an absolute path or a relative path from the current directory.</p>
+<p>repo: Repo slug, defaults to current repo. Note: The slug consists of username and repo name and is formatted like user/repo-name.</p>
+<p>target_branch: Branch to (force, see: keep_history) push local_dir contents to, defaults to gh-pages.</p>
+<p>keep_history: Optional, create incremental commit instead of doing push force, defaults to false. fqdn: Optional, sets a custom domain for your website, defaults to no custom domain support.</p>
+<p>project_name: Defaults to value of fqdn or repo slug, used for metadata. email: Optional, committer info, defaults to <a href="mailto:deploy@travis-ci.org" target="_blank" rel="noopener">deploy@travis-ci.org</a>. name: Optional, committer, defaults to Deployment Bot.</p>
+<p>committer_from_gh: Optional, defaults to false. Allows you to use the token’s owner name and email for commit. Overrides email and name options.</p>
+<p>allow_empty_commit: Optional, defaults to false. Enabled if only keep_history is true.</p>
+<p>github_url: Optional, the URL of the self-hosted GitHub enterprise, defaults to github.com.</p>
+<p>verbose: Optional, be verbose about internal steps, defaults to false.</p>
+<p>deployment_file: Optional, defaults to false, enables creation of deployment-info files.</p>
+<h3 id="official-notification-spec">official notification spec</h3>
+<p>Configuring email notifications Specify when you want to get notified:</p>
+<pre><code>notifications:
+  email:
+    recipients:
+      - one@example.com
+      - other@example.com
+    on_success: never # default: change
+    on_failure: always # default: always</code></pre>
+<h2 id="travis-ci-问题集锦">travis CI 问题集锦</h2>
+<h3 id="kdoc">KDOC:</h3>
+<h4 id="travis-ci环境变量-设置env--单行-vs-多行">travis CI环境变量 设置,env: -单行 VS 多行</h4>
+<p>不能这样分开写：会报错，变量找不到，要写到同一行</p>
+<pre><code>env:
+  - T_DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/002memo
+  - T_DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/002memo
+  - T_DIR_BASE_COPYTO=$TRAVIS_BUILD_DIR/output/copy2 
+  - T_DIR_TEMPLATE=$TRAVIS_BUILD_DIR/003work/000tools/002makefiles/   001pandoc/templates</code></pre>
+<p>参考：</p>
+<p><a href="https://docs.travis-ci.com/user/environment-variables#defining-public-variables-in-travisyml" target="_blank" rel="noopener">travis CI spec: 环境变量environment-variables</a></p>
+<pre><code>env:
+  - FOO=foo BAR=bar</code></pre>
+<p>一个build要写到同一行中, 不同行是不同的build中的变量</p>
+<h4 id="linux上文件名大小写敏感包括后缀名makefile-vs-makefile">linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</h4>
+<pre><code>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/makefile</code></pre>
+<p>报错找不文件或目录，没有编译rule</p>
+<p>原因：makefile 和 Makefile 是两个不一样的文件</p>
+<p>.c 和 .C 也是不一样的，要用脚本更改过来。</p>
+<h4 id="cp目标目录不存在先mkdir--p">cp目标目录不存在，先mkdir -p</h4>
+<pre><code>ifdef DIR_BASE_COPYTO
+    @echo copy $(SUFFIX_TO) file to {hexo post}$(DIR_BASE_COPYTO) ...
+#   cp $$@ $(dir $(subst $(DIR_BASE_OBJ),$(DIR_BASE_COPYTO),$(1))) 
+#因copy目标目录如果不存在，不能直接用cp命令，会出错，所以分两步，先mkdir, 再CP
+    mkdir -p $(dir $(subst $(DIR_BASE_OBJ),$(DIR_BASE_COPYTO),$(1))) 
+    cp $$@ $(dir $(subst $(DIR_BASE_OBJ),$(DIR_BASE_COPYTO),$(1)))
+endif</code></pre>
+<h4 id="gnumake-file写文件命令输出gbk码file-需iconv转换">gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</h4>
+<pre><code>$(file &gt;$$@.tmp</code></pre>
+<h4 id="iconv转换文件gbkutf8报错文件中有不支持的字符">iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</h4>
+<p>从文件系统中取到的中文目录名和makefile中的中文，变成了几个乱码导致iconv认为是不认识的GBK码，从而iconv报错</p>
+<p>$(file 在输出中文文件和文件夹名字时，不知道成了什么编码，反正是乱码，自然不能在转换字库中找到了。</p>
+<p>所以加入-c,表示忽略。即保持原样不转换。</p>
+<p>:</p>
+<pre><code>#   iconv -f GBK -t UTF-8 $$@.tmp &gt;$$@
+# 加入-c，表示忽略那些不能解释的字符
+    iconv -f GBK -t UTF-8 -c $$@.tmp &gt;$$@</code></pre>
+<h4 id="真正原因iconv转换文件gbkutf8报错文件中有不支持的字符">真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</h4>
+<p>.travis.yml 是以 UTF-16 littel endian (0xFFFE)存储的。 所以make带入的参数 ADD_HEXO_TAG_FROM_DIR=技术 也是UTF16LE的。</p>
+<p><span class="title-ref">/linux/Makefile</span> 是以no BOM的自然方式存储的，后来发觉不是UTF8的模式，是以中文windows的codePage存储的，所以是GBK码形式的。</p>
+<p>这样前面问题就可以解释了, <span class="title-ref">$(file &gt;$$@.tmp</span> 写入文件时， makefile中自然写入的中文"笔记"，被写成GBK码，.travis.yml带入的参数“技术”，却写入的是UTF16LE，同一文件中有不同的编码，这样如果用iconv转换自然会报错，UTF16LE编码的中文在GBK库中是没有的。同时如果用iconv强行当GBK转换就会乱了不知道是什么结果,如果保持原值用UTF8来解释自然就是乱码了。</p>
+<p>所以不管是用iconv转换，还是不转都有一种是有问题的，一个好，一个不好。</p>
+<p>解决方法：</p>
+<p>都用同一种格式存储，再决定转还是不转。建议utf8</p>
+<p>把 <span class="title-ref">/linux/Makefile</span> 存储成UTF8的。 这样发觉iconv也可以不用了，大概 <span class="title-ref">$(file &gt;$$@.tmp</span> 写入文件时，系统自然就把文件格式设成了UTF,然后用 <span class="title-ref">pandoc $$&lt; -o - &gt;&gt;$$@</span> append模式添加输入UTF时，就成了utf了。 有一点没搞清楚，到底最后成了UTF8还是UTF16LE，猜想大概是utf8.</p>
+<p>字符编码小知识： 参见 字符文件编码.rst 字符编码小知识</p>
+<hr>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/hexo-next-muse/tags/自动生成/" rel="tag"><i class="fa fa-tag"></i> 自动生成</a>
+            
+              <a href="/hexo-next-muse/tags/001-网站/" rel="tag"><i class="fa fa-tag"></i> 001.网站</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/hexo-next-muse/2019/10/24/kl_notes/002memo/001software/001install/shell/" rel="next" title="shell">
+                  <i class="fa fa-chevron-left"></i> shell
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/hexo-next-muse/2019/10/24/kl_notes/002memo/001software/001install/tools/" rel="prev" title="tools">
+                  tools <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#travis-ci"><span class="nav-number">1.</span> <span class="nav-text">travis CI</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#install"><span class="nav-number">1.1.</span> <span class="nav-text">install</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#教程链接"><span class="nav-number">1.1.1.</span> <span class="nav-text">教程链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#案例"><span class="nav-number">1.2.</span> <span class="nav-text">案例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gcc-c"><span class="nav-number">1.2.1.</span> <span class="nav-text">gcc c</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#official-deploy-spec"><span class="nav-number">1.2.2.</span> <span class="nav-text">official deploy spec</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#official-notification-spec"><span class="nav-number">1.2.3.</span> <span class="nav-text">official notification spec</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#travis-ci-问题集锦"><span class="nav-number">1.3.</span> <span class="nav-text">travis CI 问题集锦</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#kdoc"><span class="nav-number">1.3.1.</span> <span class="nav-text">KDOC:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#travis-ci环境变量-设置env--单行-vs-多行"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">travis CI环境变量 设置,env: -单行 VS 多行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#linux上文件名大小写敏感包括后缀名makefile-vs-makefile"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">linux上文件名大小写敏感，包括后缀名。Makefile VS makefile</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cp目标目录不存在先mkdir--p"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">cp目标目录不存在，先mkdir -p</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gnumake-file写文件命令输出gbk码file-需iconv转换"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">gnumake-file写文件命令输出GBK码，$(file, 需iconv转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#iconv转换文件gbkutf8报错文件中有不支持的字符"><span class="nav-number">1.3.1.5.</span> <span class="nav-text">iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#真正原因iconv转换文件gbkutf8报错文件中有不支持的字符"><span class="nav-number">1.3.1.6.</span> <span class="nav-text">真正原因：iconv转换文件(GBK=&gt;UTF8)报错，文件中有不支持的字符</span></a></li></ol></li></ol></li></ol></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">kevinluo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/hexo-next-muse/archives/">
+        
+          <span class="site-state-item-count">211</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/hexo-next-muse/categories/">
+          
+        
+        <span class="site-state-item-count">36</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/hexo-next-muse/tags/">
+          
+        
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/hexo-next-muse/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">kevinluo</span>
+</div>
+
+          
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      </span>
+    
+  
+    
+      <span class="post-meta-divider">|</span>
+    
+
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      </span>
+    
+
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/hexo-next-muse/lib/anime.min.js?v=3.1.0"></script>
+<script src="/hexo-next-muse/js/utils.js?v=7.4.0"></script>
+<script src="/hexo-next-muse/js/schemes/muse.js?v=7.4.0"></script>
+<script src="/hexo-next-muse/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/hexo-next-muse/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
+
